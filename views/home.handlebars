@@ -1,0 +1,21 @@
+<table id="results">
+    <thead>
+        <tr>
+            <th id="news-headline">Headline</th>
+            <th id="news-summary">Summary</th>
+            <th id="news-url">URL</th>
+        </tr>
+    </thead>
+    <tbody id="tablebody">
+        <!-- Results from DB here -->
+
+        {{#each newsLinks}}
+        <tr>
+            <td>Title: {{title}}</td>
+            <td>Summary: {{description}}</td>
+            <td>Link: {{link}}</td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>

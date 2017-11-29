@@ -22,9 +22,9 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 // Database configuration
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_th8kc4wp:a083t1tsfnqh38u5i7ci1u9jcu@ds123956.mlab.com:23956/heroku_th8kc4wp";
 mongoose.Promise = Promise;
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_th8kc4wp:a083t1tsfnqh38u5i7ci1u9jcu@ds123956.mlab.com:23956/heroku_th8kc4wp", {
     useMongoClient: true
 });
 var databaseUrl = "scraper";
